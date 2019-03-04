@@ -3,10 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Top Component</div>
+                    <div class="card-header">Three Component</div>
 
                     <div class="card-body">
-                        I'm an Top component.
+                        I'm an Three component.
                     </div>
                 </div>
             </div>
@@ -16,8 +16,10 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+        name: "three"
     }
 </script>
+
+<style scoped>
+
+</style>

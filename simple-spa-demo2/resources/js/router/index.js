@@ -9,8 +9,17 @@ export default new Router({
         {
             path: '/',
             name: 'index',
-
             component: require('../components/Index/top.vue').default,
+        },
+        {
+            path: '/tow',
+            name: 'index',
+            component: require('../components/Index/tow.vue').default,
+        },
+        {
+            path: '/three',
+            name: 'index',
+            component: require('../components/Index/three.vue').default,
         },
     ],
 })

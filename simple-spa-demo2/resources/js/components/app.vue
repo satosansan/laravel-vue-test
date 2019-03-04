@@ -32,9 +32,7 @@
             <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
-                <v-btn flat>Link One</v-btn>
-                <v-btn flat>Link Two</v-btn>
-                <v-btn flat>Link Three</v-btn>
+                <v-btn flat v-for="item in menuItems" :key="item.title" :to="item.link" ><span>{{ item.title }}</span></v-btn>
             </v-toolbar-items>
         </v-toolbar>
 
@@ -54,9 +52,9 @@
                 sideNav: false,
                 appTitle: "TITLE",
                 menuItems: [
-                    {title: "Link One", link: "#", icon: 'person' },
-                    {title: "Link Two", link: "#", icon: 'person' },
-                    {title: "Link Three", link: "#", icon: 'person' },
+                    {title: "Link One", link: "/", icon: 'person' },
+                    {title: "Link Two", link: "/tow", icon: 'person' },
+                    {title: "Link Three", link: "/three", icon: 'person' },
                 ]
             }
         }
