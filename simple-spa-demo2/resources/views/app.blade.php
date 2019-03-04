@@ -10,12 +10,7 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
     <body>
-        <div id="app">
-            <layouts></layouts>
-            <v-content>
-                <router-view></router-view>
-            </v-content>
-        </div>
+        <div id="app"></div>
         <script src=" {{ mix('js/app.js') }} "></script>
     </body>
 </html>

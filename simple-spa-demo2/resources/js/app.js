@@ -1,6 +1,7 @@
 require('./bootstrap');
 
 import Vue from "vue";
+import App from "./components/app"
 import router from './router'
 
 // Vuetify
@@ -21,4 +22,6 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 const app = new Vue({
     el: '#app',
     router,
+    template: '<App/>',
+    components: { App }
 });
